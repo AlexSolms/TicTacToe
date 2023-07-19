@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
 }
 
@@ -8,7 +8,7 @@ body{
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background: radial-gradient(circle, rgba(110,110,113,1) 0%, rgba(126,126,138,1) 32%, rgba(100,100,106,1) 62%, rgba(95,95,103,1) 85%, rgba(105,105,109,1) 99%);
+    background: radial-gradient(circle, rgba(110, 110, 113, 1) 0%, rgba(126, 126, 138, 1) 32%, rgba(100, 100, 106, 1) 62%, rgba(95, 95, 103, 1) 85%, rgba(105, 105, 109, 1) 99%);
 }
 
 .gameContainer {
@@ -16,10 +16,11 @@ body{
     width: auto;
 }
 
-h1{
+h1 {
     text-align: center;
-    
+
 }
+
 .crossContainer {
     display: flex;
     justify-content: space-around;
@@ -46,13 +47,13 @@ h1{
     bottom: 0;
     border-radius: 50%;
     box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.5);
-  }
+}
 
 .cross {
     width: 75px;
     height: 75px;
     position: relative;
-    
+
 }
 
 .cross:before,
@@ -96,5 +97,142 @@ h1{
     background-color: rgba(204, 204, 204, 87%);
     border: 1px solid rgb(153, 153, 153);
     height: 100px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
 
+
+.lineDiaLeft {
+    position: relative;
+}
+
+.lineDiaLeft::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    width: 130%;
+    height: 7px;
+    background-color: white;
+    transform: translateY(-50%) rotate(47deg);
+    z-index: 1;
+}
+
+.lineDiaRight {
+    position: relative;
+}
+
+.lineDiaRight::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    width: 130%;
+    height: 7px;
+    background-color: white;
+    transform: translateY(-50%) rotate(-47deg);
+    z-index: 1;
+}
+
+.lineHorizontal1 {
+    position: relative;
+
+}
+
+.lineHorizontal1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+    width: 95%;
+    height: 5px;
+    background-color: white;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.lineHorizontal0 {
+    position: relative;
+
+}
+
+.lineHorizontal0::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 2.5%;
+    width: 95%;
+    height: 5px;
+    background-color: white;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.lineHorizontal2 {
+    position: relative;
+
+}
+
+.lineHorizontal2::before {
+    content: "";
+    position: absolute;
+    top: 83%;
+    left: 2.5%;
+    width: 95%;
+    height: 5px;
+    background-color: white;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+
+.lineVertical0 {
+    position: relative;
+
+}
+
+.lineVertical0::before {
+    content: "";
+    position: absolute;
+    left: 15%;
+    bottom: 2.5%;
+    width: 5px;
+    height: 95%;
+    background-color: white;
+    z-index: 1;
+}
+
+.lineVertical1 {
+    position: relative;
+
+}
+
+.lineVertical1::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 2.5%;
+    width: 5px;
+    height: 95%;
+    background-color: white;
+    z-index: 1;
+}
+
+.lineVertical2 {
+    position: relative;
+
+}
+
+.lineVertical2::before {
+    content: "";
+    position: absolute;
+    left: 83%;
+    bottom: 2.5%;
+    width: 5px;
+    height: 95%;
+    background-color: white;
+    z-index: 1;
 }
